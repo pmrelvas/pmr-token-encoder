@@ -1,0 +1,25 @@
+<main>
+  <section id="encode-container">
+    <h2>Encode</h2>
+    <form id="encode-form">
+      <!-- username -->
+      <mat-form-field appearance="fill">
+        <mat-label>Username</mat-label>
+        <input matInput [(ngModel)]="username" name="encode-username">
+      </mat-form-field>
+
+      <!-- password -->
+      <mat-form-field appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput [(ngModel)]="password" name="encode-password">
+      </mat-form-field>
+
+      <div class="submit-result-container">
+        <button mat-raised-button color="primary" (click)="onEncodeClick()">Encode</button>
+        <mat-form-field appearance="fill" class="input-result">
+          <input matInput readonly="true" [(ngModel)]="encodedToken" name="encode-basic-token">
+        </mat-form-field>
+      </div>
+    </form>
+  </section>
+</main>

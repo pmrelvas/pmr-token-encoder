@@ -4,15 +4,24 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TokenEncoderDecoderComponent } from './token-encoder-decoder/token-encoder-decoder.component';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TokenEncoderDecoderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatInputModule,
+    FormsModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
