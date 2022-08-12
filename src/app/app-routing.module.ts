@@ -1,12 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TokenEncoderDecoderComponent } from './token-encoder-decoder/token-encoder-decoder.component';
+import { TokenEncodeComponent } from './token-encode/token-encode.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    component: TokenEncoderDecoderComponent
+    redirectTo: 'encode'
+  },
+  {
+    path: 'encode',
+    component: TokenEncodeComponent
   }
 ];
 

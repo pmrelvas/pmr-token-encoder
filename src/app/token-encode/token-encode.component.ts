@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-token-encoder-decoder',
-  templateUrl: './token-encoder-decoder.component.html',
-  styleUrls: ['./token-encoder-decoder.component.scss']
+  selector: 'app-token-encode',
+  templateUrl: './token-encode.component.html',
+  styleUrls: ['./token-encode.component.scss']
 })
-export class TokenEncoderDecoderComponent implements OnInit {
+export class TokenEncodeComponent implements OnInit {
 
   username: string = '';
   password: string = '';
